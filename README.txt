@@ -1,15 +1,15 @@
 Example output: (just single experiment)
 
-For fixed sample set [[1, 1], [2, 2], [3, 4.2], [0, 0]] and fixed degree 2, running experiments with different resolutions...
-Trying to find best fitting c_i for p(x)=sum(c_i*x^i) , where each c_i has fixed decimal digit count, resolution 0.0001
-['0.0600', '0.4600', '0.3000']
-Trying to find best fitting c_i for p(x)=sum(c_i*x^i) , where each c_i has fixed decimal digit count, resolution 0.001
-['0.060', '0.460', '0.300']
-Trying to find best fitting c_i for p(x)=sum(c_i*x^i) , where each c_i has fixed decimal digit count, resolution 0.01
-['0.06', '0.46', '0.30']
-Trying to find best fitting c_i for p(x)=sum(c_i*x^i) , where each c_i has fixed decimal digit count, resolution 0.1
-['-0.0', '0.5', '0.3']
-Trying to find best fitting c_i for p(x)=sum(c_i*x^i) , where each c_i has fixed decimal digit count, resolution 1.0
-['0', '1', '0']
-Trying to find best fitting c_i for p(x)=sum(c_i*x^i) , where each c_i has float64 resolution
-[0.06 0.46 0.3 ]
+Running poly_fit experiment for samples [[1, 1.2], [2, 3.1], [3, 0.5], [4, 5.7]] and degree 2 for various resolutions...
+
+Trying to find best fitting c_i for p(x)=sum(c_i*x^i) , where each c_i has full float64 resolution
+result: best coefficients = [ 4.02499999 -3.03499999  0.825     ], score=2.7503636123247412
+Trying to find best fitting c_i for p(x)=sum(c_i*x^i) , where each c_i has at most 0 decimal digits
+result: best coefficients = [np.float64(5.0), np.float64(-4.0), np.float64(1.0)], score=2.7910571477846275
+Trying to find best fitting c_i for p(x)=sum(c_i*x^i) , where each c_i has at most 1 decimal digits
+result: best coefficients = [np.float64(3.9), np.float64(-2.9), np.float64(0.8)], score=2.751363298439611
+Trying to find best fitting c_i for p(x)=sum(c_i*x^i) , where each c_i has at most 2 decimal digits
+result: best coefficients = [np.float64(4.0), np.float64(-3.01), np.float64(0.82)], score=2.7503817916791116
+Trying to find best fitting c_i for p(x)=sum(c_i*x^i) , where each c_i has at most 3 decimal digits
+result: best coefficients = [np.float64(4.025), np.float64(-3.035), np.float64(0.825)], score=2.7503636123247412
+
